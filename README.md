@@ -15,7 +15,7 @@ This is a simple script designed to facilitate taking automated screenshots of w
 
 2. Create a file: `urls.txt`, with one URL to capture per line. Example
 
-3. ~~~
+   ~~~
    https://google.com
    http://dogpile.com
    ~~~
