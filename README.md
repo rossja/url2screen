@@ -12,14 +12,11 @@ This is a simple script designed to facilitate taking automated screenshots of w
 ##Usage
 
 1. Install deps by running `npm install`
-
-2. Create a file: `urls.txt`, with one URL to capture per line. Example
+2. Create a file: *urls.txt*, with one URL to capture per line. Example
 
    ~~~
    https://google.com
    http://dogpile.com
    ~~~
-
-4. Run the script: `node url2screen.js`
-
-5. Enjoy your images *(in `./screenshots`)*!
+3. Run the script: `node url2screen.js`
+4. Enjoy your images (in *./screenshots*)!
