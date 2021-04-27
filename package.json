@@ -1,0 +1,30 @@
+{
+  "name": "url2screen",
+  "description": "Automated screenshots of webpages using NodeJS",
+  "version": "1.0.0",
+  "main": "url2screen.js",
+  "scripts": {
+    "test": "exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rossja/url2screen.git"
+  },
+  "keywords": [
+    "url2screen"
+  ],
+  "author": "rossja",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/rossja/url2screen/issues"
+  },
+  "homepage": "https://github.com/rossja/url2screen#readme",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "fs": "*",
+    "node-server-screenshot": "^0.2.4",
+    "path": "^0.12.7",
+    "readline": "^1.3.0",
+    "stream": "^0.0.2"
+  }
+}
