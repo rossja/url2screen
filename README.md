@@ -15,8 +15,7 @@ This is a simple script designed to facilitate taking automated screenshots of w
 2. Create a file: *urls.txt*, with one URL to capture per line. Example
 
    ~~~
-   https://google.com
-   http://dogpile.com
+   https://github.com/3rkut/url2screen
    ~~~
 3. Run the script: `node url2screen.js`
 4. Enjoy your images (in *./screenshots*)!
