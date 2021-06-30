@@ -35,20 +35,18 @@ function capture (urls, outDir) {
   for (var i = 0; i < urls.length; i++) {
     const targetUrl = urls[i]
     const proto = targetUrl.split(':', 1)[0]
-    const domainName = targetUrl.split('//', 3)[1]
-    const outFile = outDir + '/' + proto + '_' + domainName + '.jpg'
+    var domainName = targetUrl.split('//', 3)[1]
+    var crypto = require('crypto');
+    var hash = crypto.createHash('md5').update(domainName).digest('hex');
+    const outFile = outDir + '/' + hash + '.jpg'
 
     screenie.fromURL(targetUrl, outFile, function () {
-      console.log('saved screenshot of ' + domainName + ' at ' + outFile)
+      console.log('saved screenshot of ' + '{' + domainName + '}' + ' at ' + outFile)
       // get the hash of the saved file so we avoid dupes
       var fd = fs.createReadStream(outFile)
-      const hash = crypto.createHash('sha1')
-      hash.setEncoding('hex')
       fd.on('end', function () {
-        hash.end()
-        console.log('hash: ', hash.read())
+        console.log('hash: ', hash)
       })
-      fd.pipe(hash)
     })
   }
 }
